@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Shop</title>
+    <link rel="icon" href="./img/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="./src/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./build/styles.css">
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+<body style="background-image: url('https://media.tenor.com/mYkpP7sJQ5cAAAAd/shop.gif');" class="w-full h-full bg-repeat bg-left bg-cover bg-fixed">
+    <button id="playButton"></button>
+<audio id="backgroundAudio" loop>
+    <source src="lofi.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    const playButton = document.getElementById("playButton");
+    const backgroundAudio = document.getElementById("backgroundAudio");
+
+    playButton.addEventListener("click", () => {
+        backgroundAudio.play();
+        playButton.style.display = "none"; // Hide the play button once clicked
+    });
+</script>
+    <div >
+        <div class="container pt-32 lg:pt-20 2xl:pt-[100px] pb-20">
+            <div class="flex flex-wrap">
+                <div class="w-4/5 mx-[30px] h-auto lg:mx-[10px] md:w-9/12 md:h-[641px] md:mx-auto 2xl:mx-[40px] lg:w-4/12 lg:h-[580px] 2xl:h-[641px] px-4 items-center md:px-[50px]">
+                    <div class=" bg-primary border mb-10 lg:mb-0 border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25 hover:shadow-lg hover:shadow-shadowBro" > 
+                        <h1 class="text-center font-bitFont text-xl lg:text-[24px] text-fortext mb-2 mt-5 lg:mt-20 wd:mt-[20]">Magic Shop</h1>
+                        <h2 class="text-center font-japanFont text-base lg:text-[16px] font-thin text-white mb-10 lg:mb-[80px] 2xl:mb-[100px] md:mb-[100px] font-bold">Unmasking Distorted Standards</h2>
+                        <ul id="myTab"  data-tabs-toggle="#myTabContent" role="tablist" class="gap-4 grid grid-cols-2 p-3 lg:p-6 lg:mb-[80px] 2xl:mb-[100px] md:mb-[100px] ">
+                            <li align="center" role="presentation">
+                                <button data-tabs-target="#home" aria-controls="home" id="home-tab" type="button" aria-selected="false" role="tab">
+                                    <img src="./img/home.png" alt="" class=" inline-block fill-current mb-2 w-[64px] lg:w-[104px]">
+                                </button>
+                                <h1 class="font-firaCode text-lg lg:text-[16px] mb-5 text-fortext lg:font-medium">Home</h1>
+                            </li>
+    
+                            <li align="center" role="presentation">
+                                <button data-tabs-target="#profile" aria-controls="profile" id="profile-tab"  type="button" aria-selected="false" role="tab">
+                                    <img src="./img/profile.png"  alt="" class="inline-block fill-current mb-2 w-[64px] lg:w-[104px]">
+                                </button>
+                                <h1 class="font-firaCode text-lg lg:text-[16px] mb-5 text-fortext lg:font-medium">About</h1>
+                            </li>
+    
+                            <li align="center"role="presentation">
+                                <button data-tabs-target="#project" aria-controls="project" id="project-tab" type="button" aria-selected="false" role="tab">
+                                    <img src="./img/project.png" alt="" class="inline-block fill-current mb-2 w-[64px] lg:w-[104px]">
+                                </button>
+                                <h1 class="font-firaCode text-lg lg:text-[16px] mb-5 text-fortext lg:font-medium ">Learn</h1>
+                            </li>
+    
+                            <li align="center" role="presentation">
+                                <button data-tabs-target="#contact" aria-controls="contact" id="contact-tab" type="button" aria-selected="false" role="tab">
+                                    <img src="./img/contact.png" alt="" class="hover:text-secondary font-bitFont text-white   inline-block fill-current mb-2 w-[64px] lg:w-[104px]">
+                                </button>
+                                <h1 class="font-firaCode text-lg lg:text-[16px] mb-10 text-fortext  lg:font-medium">Contact</h1>
+                            </li>
+    
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                
+                <div id="myTabContent">
+                    <div class="hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="mx-[40px] lg:mx-[10px] md:mx-auto  items-center md:w-[790px] 2xl:mx-[60px] md:h-auto w-4/5 lg:w-[790px] 2xl:w-[790px] lg:h-auto bg-primary border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25  hover:shadow-lg hover:shadow-shadowBro">
+                            <div class="flex flex-wrap">
+                                <div align="center" class="text-white font-bitFont w-1/12 border-gray-500 mx-auto mt-3 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-[18px] lg:w-[18px]" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM256 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
+                                </div>
+                                <div class="text-white w-4/5 mx-auto mt-1">
+                                    <h1 class="text-center border-r border-l h-full border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-bold">A safe zone for you</h1>
+                                </div>
+                                <div align="center" class="text-white w-1/12 mx-auto mt-2 mb-2">
+                                    <button class=" border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-thin">X</button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-500 sm:mx-auto mx-auto w-full h-full" />
+
+                            <div align="center" class="mt-20 mb-20 lg:mt-12 lg:mb-12">    
+                                <img src="./img/ione.gif" alt="" class="w-[500px]">
+                                <h1 class="font-bitFont text-base xl:text-3xl lg:text-3xl md:text-2xl font-bold text-white">Welcome to the Magic Shop</h1>
+                                <h1 class="japanTitle font-japanFont text-base xl:text-xl lg:text-xl md:text-xl italic text-fortext"></h1>
+                                
+                            </div>
+                            
+                            <footer>
+                                <hr class="border-gray-500 sm:mx-auto " />
+                                <h1 class="text-white font-firaCode lg:px-16 px-4 text-base lg:text-[15px] font-thin mt-3 mb-3">A1101 | Joshua Patrick G. Fajardo | Understanding the Self | 2023</h1>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="mx-[40px] 2xl:mx-[60px] lg:mx-[10px] md:mx-auto  items-center md:w-[790px] w-4/5  lg:w-[790px] 2xl:w-[790px] lg:h-auto bg-primary border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25 hover:shadow-lg hover:shadow-shadowBro mb-10  md:h-auto">
+                            <div class="flex flex-wrap">
+                                <div align="center" class="text-white font-bitFont w-1/12 border-gray-500 mx-auto mt-3 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-[18px] lg:w-[18px]" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM256 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
+                                </div>
+                                <div class="text-white w-4/5 mx-auto mt-1">
+                                    <h1 class="text-center border-r border-l h-full border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-bold">Come sit and have cup of tea</h1>
+                                </div>
+                                <div align="center" class="text-white w-1/12 mx-auto mt-2 mb-2">
+                                    <button class="border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-thin">X</button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-500 sm:mx-auto " />
+
+                            <div class="flex flex-wrap mt-20 mb-20  lg:mt-8 lg:mb-8">
+                                <div align="center" class="w-full lg:w-1/2 px-4 self-center">
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/050/287/693/original/silvia-vaccher-gomez-idleee.gif?1654518676" alt="" class="mb-5 w-[350px] rounded-lg shadow-lg shadow-primary">
+                                </div>
+                                <div class="w-full lg:w-1/2 px-6">
+                                    <h1 class="font-firaCode text-lg lg:text-xl xl:text-xl font-medium text-fortext mb-3 lg:mb-5"> Where <span class="auto-type"></span></h1>
+                                    <p class="font-firaCode text-base font-thin text-white mb-3">Welcome to Magic Shop, an enchanting digital haven for teenagers. In a world filled with distorted self-perceptions and unrealistic expectations, we provide a safe and magical space for self-discovery, empowerment, and self-acceptance. Here, authenticity is celebrated, and every teenager is a unique wonder ready to shine.</p>
+                                    <p class="font-firaCode text-base font-thin text-white mb-3">Join us on this transformative journey towards self-love and boundless potential. With enchanting resources and a vibrant community of peers and mentors, we'll help you unveil the extraordinary within. Embrace your true self, for you are a Magic Shop wonder, and your journey to self-realization starts here. Let the magic begin!</p>
+                                    <div class="grid grid-cols-3 gap-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <footer>
+                                <hr class="border-gray-500 sm:mx-auto " />
+                                <h1 class="text-white font-firaCode lg:px-16 px-4 text-base lg:text-[15px]  font-thin mt-3 mb-3">A1101 | Joshua Patrick G. Fajardo | Understanding the Self | 2023</h1>
+                            </footer>
+                        </div>
+                        <div class="visible lg:visible xl:visible md:visible md:mx-auto  items-center md:w-[790px] mx-[40px] xl:w-[790px] lg:w-[790px] md:h-auto lg:mx-[10px] 2xl:mx-[60px] 2xl:w-[790px] w-4/5  lg:h-auto border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25">
+                            <div class="flex flex-wrap">
+                                <div align="center" class="text-white font-bitFont w-1/12 border-gray-500 mx-auto mt-3 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-[18px] lg:w-[18px]" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM256 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
+                                </div>
+                                <div class="text-white w-4/5 mx-auto mt-1">
+                                    <h1 class="text-center border-r border-l h-full border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-bold">Social Media</h1>
+                                </div>
+                                <div align="center" class="text-white w-1/12 mx-auto mt-2 mb-2">
+                                    <button class="border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-thin">X</button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-500 sm:mx-auto" />
+                            <div class="mt-6 mb-6 w-full mx-auto flex flex-wrap lg:pl-[240px] md:pl-[240px] pl-2 gap-3">
+                                <a href="https://github.com/jpfjdo" type="button" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://media.discordapp.net/attachments/749996949062549545/1125684097063338094/image.png" alt="" class="w-[50px]">
+                                </a>
+                                <a type="button" href="https://www.instagram.com/inioneeee" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://media.discordapp.net/attachments/749996949062549545/1125684403201388544/image.png" alt="" class="w-[50px]">
+                                </a>
+                                <a type="button" href="https://www.facebook.com/jpfjdo" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://freepngimg.com/thumb/facebook/141229-logo-circle-pic-facebook-free-hd-image.png" alt="" class="w-[50px]">
+                                </a>
+                                <a type="button" href="https://twitter.com/inioneeee" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://media.discordapp.net/attachments/749996949062549545/1125685839729545237/image.png" alt="" class="w-[50px]">
+                                </a>
+                                <a type="button" href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://media.discordapp.net/attachments/749996949062549545/1125686081854111745/image.png" alt="" class="w-[50px]">
+                                </a>
+                            </div>
+                            </div>
+                            </div>                            
+                    <div class="hidden" id="project" role="tabpanel" aria-labelledby="project-tab">
+                        <div class="mx-[40px] 2xl:mx-[60px]  lg:mx-[10px] w-4/5 lg:w-[790px] md:mx-auto  items-center md:w-[790px] 2xl:w-[790px] md:h-auto lg:h-auto bg-primary border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25 hover:shadow-lg hover:shadow-shadowBro ">
+                            <div class="flex flex-wrap">
+                                <div align="center" class="text-white font-bitFont w-1/12 border-gray-500 mx-auto mt-3 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-[18px] lg:w-[18px]" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM256 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
+                                </div>
+                                <div class="text-white w-4/5 mx-auto mt-1">
+                                    <h1 class="text-center border-r border-l h-full border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-bold">Project Page</h1>
+                                </div>
+                                <div align="center" class="text-white w-1/12 mx-auto mt-2 mb-2">
+                                    <button class="border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-thin">X</button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-500 sm:mx-auto " />
+                            <div class="mt-8 mb-24 lg:mt-20 lg:mb-20 md:mb-20 md:mt-20">
+                                <div class="flex flex-wrap">
+                                    <div  class="w-full px-4 lg:w-3/4 2xl:w-4/5 md:w-3/4 mx-auto text-center items-center" >
+                                        <ul id="myTab" data-tabs-toggle="#myTabContent" role="tablist" class="flex flex-wrap gap-2 -mb-px text-sm font-medium text-center" >
+                                            <li role="presentation" class="mr-2 mb-3 flex items-center">
+                                                <button data-tabs-target="#writing" aria-controls="writing" id="writing-tab" type="button" aria-selected="false" role="tab" class="flex">
+                                                    <img src="./img/what.png" alt="SD" width="30" height="30" class="mr-2">
+                                                    <a class="text-white lg:text-lg 2xl:text-sm text-sm font-firaCode font-medium">What is it?</a>
+                                                </button>
+                                            </li>  
+                                            <li role="presentation" class="mr-2 mb-3 flex items-center">
+                                                <button data-tabs-target="#research" aria-controls="research" id="research-tab" type="button" aria-selected="false" role="tab" class="flex">
+                                                    <img src="./img/why.png" alt="SD" width="30" height="30" class="mr-2">
+                                                    <a class="text-white lg:text-lg 2xl:text-sm text-sm font-firaCode font-medium">Why?</a>
+                                                </button>
+                                            </li>                                                                                       
+                                            <li role="presentation" class="mr-2 mb-3 flex items-center">
+                                                <button data-tabs-target="#wd" aria-controls="wd" id="wd-tab" type="button" aria-selected="false" role="tab" class="flex">
+                                                    <img src="./img/overcome.png" alt="SD" width="30" height="30" class="mr-2">
+                                                    <a class="text-white lg:text-lg 2xl:text-sm text-sm font-firaCode font-medium">How to Overcome</a>
+                                                </button>
+                                            </li>  
+                                            <li role="presentation" class="mr-2 mb-3 flex items-center">
+                                                <button data-tabs-target="#sd" aria-controls="sd" id="sd-tab" type="button" aria-selected="false" role="tab" class="flex">
+                                                    <img src="./img/rl.png" alt="SD" width="30" height="30" class="mr-2">
+                                                    <a class="text-white lg:text-lg 2xl:text-sm text-sm font-firaCode font-medium">Related Articles</a>
+                                                </button>
+                                            </li>                                                                                                                            
+                                        </ul>
+                                    </div>
+                                    
+                                    <div id="myTabContent" class="w-full lg:w-6/12 2xl:w-8/12 md:w-4/5 md:px-40  md:mx-auto md:self-center lg:mx-auto px-4 lg:px-16 self-center mt-5 lg:mt-8">
+                                        <div class="hidden" id="writing" role="tabpanel" aria-labelledby="writing-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden ">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://64.media.tumblr.com/2ff10e1546e3de27f24fd7969b427ffc/tumblr_mtih08mmXW1rnvc1co1_500.gifv" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont">Undistorted Self-Perceptions of Teenagers</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">Distorted perceptions of teenagers on themselves" refer to inaccurate self-images influenced by factors like societal beauty standards, self-worth, social interactions, and academic abilities, often leading to negative consequences on their mental and emotional well-being.</p>
+                                                    <a href="https://parents.au.reachout.com/common-concerns/everyday-issues/self-esteem-and-teenagers" class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer" type="button">
+                                                        Read more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <div class="hidden" id="research" role="tabpanel" aria-labelledby="research-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden ">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://64.media.tumblr.com/tumblr_m8wnqaK0Td1rtyx3fo1_r1_500.gifv" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont">They become self-conscious as they age</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">This happens because during adolescence, individuals are undergoing significant physical, emotional, and social changes, and they are highly susceptible to external influences and pressures that can distort their self-perception.</p>
+                                                    <a href="https://www.shepherdshillacademy.org/common-teen-issues/low-self-esteem-and-negative-body-image-in-teens/#:~:text=Puberty%20%26%20Development&text=As%20a%20teen's%20body%20is,trying%20time%20for%20many%20teenagers." class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer" type="button">
+                                                        Read more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <div class="hidden" id="wd" role="tabpanel" aria-labelledby="wd-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://pop.inquirer.net/files/2017/05/Hayao-Miyazaki-Films-1.gif" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont">Five ways to overcome</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">As teens struggle with anxiety and perfectionism, how can we help them like who they are?</p>
+                                                    <a href="https://greatergood.berkeley.edu/article/item/five_ways_to_help_teens_feel_good_about_themselves" class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer" type="button">
+                                                        Read more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <div class="hidden" id="sd" role="tabpanel" aria-labelledby="sd-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden ">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://i.pinimg.com/originals/19/ab/71/19ab7192e68c6799440529cc96485c25.gif" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont ">Related literature</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">Teens with low self-esteem tend to compare themselves unreasonably with peers who they consider more attractive, smarter, and popular.</p>
+                                                    <a href="https://atriskyouthprograms.com/low-self-esteem-in-teenagers-2/" class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                                        Read more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="art" role="tabpanel" aria-labelledby="art-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden ">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://i.pinimg.com/originals/d9/d8/81/d9d88132cfb2bc4a7e4820c991a286bd.gif" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont ">Coming Soon!</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">I used to do digital art and I hope to get back to doing it again soon! :3</p>
+                                                    <a href="https://github.com/rulanugrh/gometri" class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                                                        Coming Soon!
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden" id="cv" role="tabpanel" aria-labelledby="cv-tab">
+                                            <div class="max-w-md bg-primary border border-gray-300 rounded-lg bg-opacity-25 backdrop-filter backdrop-blur-lg overflow-hidden">
+                                                <a href="#">
+                                                    <img class="rounded-t-lg" src="https://i.pinimg.com/originals/f0/c6/6f/f0c66f528d73b1631ea87ceb89109999.gif" alt=""/>
+                                                </a>
+                                                <div class="p-5">
+                                                    <a href="#">
+                                                        <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-fortext font-bitFont">Resume</h5>
+                                                    </a>
+                                                    <p class="mb-7 font-normal font-firaCode text-white lg:text-lg">Let me tell you more about myself, my achievements, and educational background. ^-^</p>
+                                                    <a href="https://drive.google.com/file/d/1QBoBpxqp7jAJ2dnxxr-a2SK_pmQekR8_/view?usp=sharing" class="block font-firaCode text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer" type="button">
+                                                        View CV
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                            <footer>
+                                <hr class="border-gray-500 sm:mx-auto " />
+                                <h1 class="text-white font-firaCode lg:px-16 px-4 text-base lg:text-[15px] font-thin mt-3 mb-3">A1101 | Joshua Patrick G. Fajardo | Understanding the Self | 2023</h1>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="hidden" id="contact" role="tabpanel" aria-labelledby="contact-tab"> 
+                        <div class="mx-[40px] lg:mx-[10px] 2xl:mx-[60px] w-4/5 lg:w-[790px] lg:h-auto md:w-[790px] md:mx-auto items-center 2xl:w-[790px] md:h-auto bg-primary border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-25 hover:shadow-lg hover:shadow-shadowBro ">
+                            <div class="flex flex-wrap">
+                                <div align="center" class="text-white font-bitFont w-1/12 border-gray-500 mx-auto mt-3 mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-[18px] lg:w-[18px]" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 9.4C21.9-3.1 42.1-3.1 54.6 9.4L160 114.7V96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 4.3-.9 8.5-2.4 12.2c-1.6 3.7-3.8 7.3-6.9 10.3l-.1 .1c-3.1 3-6.6 5.3-10.3 6.9c-3.8 1.6-7.9 2.4-12.2 2.4H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h18.7L9.4 54.6C-3.1 42.1-3.1 21.9 9.4 9.4zM256 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM114.7 352H96c-17.7 0-32-14.3-32-32s14.3-32 32-32h96 0l.1 0c8.8 0 16.7 3.6 22.5 9.3l.1 .1c3 3.1 5.3 6.6 6.9 10.3c1.6 3.8 2.4 7.9 2.4 12.2v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3L54.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L114.7 352zM416 96c0-17.7 14.3-32 32-32s32 14.3 32 32v18.7L585.4 9.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 160H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448c-8.8 0-16.8-3.6-22.6-9.3l-.1-.1c-3-3.1-5.3-6.6-6.9-10.3s-2.4-7.8-2.4-12.2l0-.1v0V96zM525.3 352L630.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 397.3V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V320v0c0 0 0-.1 0-.1c0-4.3 .9-8.4 2.4-12.2c1.6-3.8 3.9-7.3 6.9-10.4c5.8-5.8 13.7-9.3 22.5-9.4c0 0 .1 0 .1 0h0 96c17.7 0 32 14.3 32 32s-14.3 32-32 32H525.3z"/></svg>
+                                </div>
+                                <div class="text-white w-4/5 mx-auto mt-1">
+                                    <h1 class="text-center border-r border-l h-full border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-bold">Contact Page</h1>
+                                </div>
+                                <div align="center" class="text-white w-1/12 mx-auto mt-2 mb-2">
+                                    <button class="border-gray-500 font-bitFont text-base lg:text-[20px] lg:font-thin">X</button>
+                                </div>
+                            </div>
+                            <hr class="border-gray-500 sm:mx-auto " />
+
+                            <div class="mt-20 mb-20 lg:mb-10">
+                                <h1 class="lg:px-10 px-2 font-firaCode text-base lg:text-xl 2xl:text-lg font-thin text-fortext mb-5 lg:mb-10"><span class="text-lime-400"></span><span class="text-third font-semibold"></span><span class="text-lime-400"></span> <span class="text-white"></span></h1>
+                                <div align="center" class="mb-8">
+                                    <h1 class="text-center font-bitFont font-bold text-lg xl:text-2xl 2xl:text-xl inline lg:text-2xl md:text-2xl text-white">Do you need someone to talk to?</h1>
+                                    <h1 class="text-center italic text-lg xl:text-xl lg:text-xl 2xl:text-xl tex-white font-japanFont text-white mb-5"></h1>
+                                </div>
+                                <h1 class="lg:px-10  px-2 font-firaCode text-base lg:text-xl 2xl:text-lg font-thin text-fortext "> <span class="text-lime-400"></span><span class="text-third font-semibold"></span><span class="text-lime-400"></span> <span class="text-white"></span></h1>
+                                <div class="md:px-10 2xl:px-1 flex flex-wrap">
+                                    <div align="center" class="2xl:w-1/2 lg:w-1/2 md:w-1/2 w-full">
+                                        <img src="./img/profile.gif" alt="" class="w-[300px]">
+                                    </div>
+                                    <div class="lg:w-1/2 2xl:w-1/2 px-6 2xl:px-1 md:w-1/2 w-full self-center">
+                                        <h1 class="font-firaCode text-base lg:text-xl xl:text-xl 2xl:text-lg md:text-xl font-semibold mb-2 text-fortext">E-Mail<span class="font-thin text-white">: jpfjdo@gmail.com</span></h1>
+                                        
+                                        <h2 class=" md:text-xl font-firaCode text-base lg:text-xl xl:text-xl 2xl:text-lg font-semibold mb-2 text-fortext">Phone #<span class="font-thin text-white">: +63 (991) 572 6875</span></h2>
+                                        
+                                        <h2 class="font-firaCode md:text-xl text-base lg:text-xl xl:text-xl 2xl:text-lg font-semibold mb-2 text-fortext">Instagram<span class="font-thin text-white">: inioneeee</span></h2>
+                                        
+                                        <h2 class="font-firaCode text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-lg font-semibold mb-2 text-fortext">Facebook<span class="font-thin text-white">: Joshua Patrick Fajardo</span></h2>
+                                        
+                                        <h2 class="font-firaCode text-base lg:text-xl md:text-xl xl:text-xl 2xl:text-lg font-semibold mb-2 text-fortext">Quote<span class="font-thin text-white">: I don't want to run away anymore, I want to see what happens when I don't.</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer>
+                                <hr class="border-gray-500 sm:mx-auto " />
+                                <h1 class="text-gray-300 font-firaCode lg:px-4 px-4 text-base lg:text-[15px] font-extrabold mt-3 mb-3">| <span class="font-thin italic">I'm one message away! I hope you heal from all the things you don't talk about ^-^</span></h1>
+                            </footer>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./src/js/anime.min.js"></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Distorted Views are Unveiled", "We Empower Teenagers", "You Will Never Be Alone"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+
+    </script>
+    <script>
+        var typed = new Typed(".japanTitle", {
+            strings: ["Where distorted perceptions are unmasked!"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            onComplete: function() {
+                // When the typing animation is complete, change the color
+                var element = document.querySelector(".japanTitle");
+                element.style.color = "white"; // Change to your desired color
+            }
+        })
+    </script>
+    <script>
+        var typed = new Typed(".japanTitle", {
+            strings: ["Where distorted perceptions are unmasked!"],
+            typeSpeed: 100,
+            backSpeed: 100,
+
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+    
+        window.addEventListener("load", function() {
+            // Add a delay of 4500 milliseconds (4 seconds) before hiding the preloader
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 6500); // Adjust the delay duration as needed (in milliseconds)
+        });
+    </script>
+    
+
+
+</body>
+</html>
